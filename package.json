@@ -1,0 +1,15 @@
+{
+  "name": "otp-provider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gerard Ryan <gryan@redhat.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.15.4",
+    "speakeasy": "^2.0.0"
+  }
+}
