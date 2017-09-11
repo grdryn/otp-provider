@@ -30,8 +30,8 @@ function getToken(secret) {
 };
 
 app.get('/:service/:id', function getServiceId(req, res) {
-  const id = req.params.id.toUpperCase();
-  const service = req.params.service.toUpperCase();
+  const id = req.params.id.toUpperCase().replace(/[\.-]/g, '_');
+  const service = req.params.service.toUpperCase().replace(/[\.-]/g, '_');
   const secret = process.env[`SECRET_${service}_${id}`];
 
   if (secret) {
